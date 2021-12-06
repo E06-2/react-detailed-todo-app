@@ -28,7 +28,7 @@ const App = () => {
   //Once the user enters a new task and clicks on the submit button this function gets called
   //This will take the entered task, make sure something has been entered into the field and
   //add it to our array. We then clear out the input field. As we are checking any changes in our
-  //array(tasks) with our effect above these changes will get written to our localStorage..
+  //array(tasks) with our effect above these changes will get written to our localStorage.
   const handleSubmit = (e) => {
     e.preventDefault();
     task.task.length > 0 && setTasks([...tasks, task]);
